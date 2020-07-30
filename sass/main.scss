@@ -1,0 +1,72 @@
+// variables
+$primary-color: #a2faa3;
+$accent-color: #ffc0cb;
+$light-color: #eee;
+$secondary-color: #7d80da;
+$dark-color: #65655e;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.buttons {
+  text-align: center;
+  .btn {
+    font-size: 1.4rem;
+    padding: 0.5rem 1.5rem;
+    border-style: none;
+    border-radius: 50px;
+    margin: 1.5rem;
+    background-color: $secondary-color;
+    color: $light-color;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    outline: none;
+
+    &:hover {
+      transform: scale(1.1);
+      background: $dark-color;
+      color: $primary-color;
+    }
+
+    &:active {
+      transform: scale(1);
+    }
+  }
+}
+
+body {
+  background: linear-gradient(
+    45deg,
+    $primary-color,
+    $light-color,
+    $accent-color
+  );
+  height: 100vh;
+}
+
+#title {
+  text-align: center;
+  margin: 0.5rem 0;
+  color: #333;
+  text-shadow: 2px 2px $accent-color;
+}
+
+#grid-area {
+  border: 10px solid $dark-color;
+  border-radius: 10px;
+  width: 600px;
+  height: 600px;
+
+  margin: auto;
+  display: grid;
+  // grid-template-columns: repeat(16, 1fr); this is in script.js
+  .grid-box {
+    border-right: 1px solid #000;
+    border-bottom: 1px solid #000;
+    background: #fff;
+  }
+}

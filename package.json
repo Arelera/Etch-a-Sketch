@@ -1,0 +1,22 @@
+{
+  "name": "etch-a-sketch",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass": "node-sass -w sass/ -o css/ --recursive"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Arelera/Etch-a-Sketch.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Arelera/Etch-a-Sketch/issues"
+  },
+  "homepage": "https://github.com/Arelera/Etch-a-Sketch#readme",
+  "dependencies": {
+    "node-sass": "^4.14.1"
+  }
+}
